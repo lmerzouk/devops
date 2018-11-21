@@ -1,23 +1,12 @@
-pipeline {
-    agent any
-
-    stages {
-        stage('Build') {
-		     
-            steps {
-			  println (build.displayName)
-                echo 'Building..'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
+node {
+    stage('Build') {
+	    println (build.displayName)
+        echo 'Building....'
+    }
+    stage('Test') {
+        echo 'Building....'
+    }
+    stage('Deploy') {
+        echo 'Deploying....'
     }
 }
