@@ -1,3 +1,4 @@
+import jenkins.model.*
 node {
     stage('Build') {
 	    println (build.displayName)
