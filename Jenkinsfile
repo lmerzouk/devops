@@ -3,8 +3,9 @@ pipeline {
 
     stages {
         stage('Build') {
-		       println (build.displayName)
+		     
             steps {
+			  println (build.displayName)
                 echo 'Building..'
             }
         }
