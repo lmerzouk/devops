@@ -2,7 +2,7 @@ import jenkins.model.*
 node {
     stage('Build') {
 	   
-	    println (currentBuild.displayName)
+	    currentBuild.displayName+="> toto "
         echo 'Building....'
     }
     stage('Test') {
