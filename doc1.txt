@@ -1,1 +1,1 @@
-ds ffff hhh gggh
+ds ffff hhh ggghmaven-release-plugin
